@@ -49,8 +49,8 @@ newton(double complex w, double k, double complex *Dwk)
   double complex w_old, detw_old, detw, dw;
   int iter;
   bool go_for_newton;
-  
-  w_old = w-1.e-5-1.e-5*I;
+  double delta = 1.e-5;
+  w_old = w-delta-delta*I;
 
   //newton method
   detw = 0;
