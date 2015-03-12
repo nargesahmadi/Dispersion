@@ -114,6 +114,7 @@ calc_chi(double complex w, double k, int kind, double complex chi[3][3])
     }
   }
 
+  //FIXME; find a smarter way to determine the nmax for Bessels
 
   // determine maximum n for Besselfunction:
   nmaxrun = params.nmax;
